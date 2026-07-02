@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/pjp8rub.css">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+     <script type="module" src="js/main.js"></script>   
+    <title>Bean & Leaf - Coffee and Tea Co.</title>
+</head>
+    <body>
+         <a href="#main-content" class="skip-link">Skip to main content</a>
+         <div id="sticky-header-con">
+        <header id="main-header" class="grid-con center-grid-con">
+            <h1 class="visually-hidden">Welcome to Bean & Leaf</h1>
+            <a href="index.html" class="col-span-1 l-col-start-1 l-col-end-4">
+                <picture> 
+                        <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                            images/logo.svg"> 
+                    <img src="images/logo-icon.svg" alt="Bean & Leaf Logo"> 
+                </picture>
+            </a>
+            <div id="nav-icons" class="col-span-2 m-col-start-8 m-col-end-11">
+                        <!-- https://heroicons.com/ -->
+                        <!-- https://lucide.dev/ -->
+                        <a href="#">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></a>
+                        <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg></a>
+                         <a href="#">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></a>
+                       <label class="theme-switch">
+    <input type="checkbox" id="theme-toggle">
+    
+    <span class="slider">
+        <!-- Sun icon -->
+        <svg class="icon sun" xmlns="http://www.w3.org/2000/svg"
+            width="18" height="18" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2"/>
+            <path d="M12 20v2"/>
+            <path d="M4.93 4.93l1.41 1.41"/>
+            <path d="M17.66 17.66l1.41 1.41"/>
+            <path d="M2 12h2"/>
+            <path d="M20 12h2"/>
+            <path d="M6.34 17.66l-1.41 1.41"/>
+            <path d="M19.07 4.93l-1.41 1.41"/>
+        </svg>
+
+        <!-- Moon icon -->
+        <svg class="icon moon" xmlns="http://www.w3.org/2000/svg"
+            width="18" height="18" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 1 0 9 9 9 9 0 1 1-9-9z"/>
+        </svg>
+    </span>
+</label>
+            </div>
+            <nav id="main-nav" class="col-span-1 m-col-start-2 m-col-end-8 l-col-start-4 l-col-end-8">
+                <h2 class="visually-hidden">Main Navigation</h2>
+                <input type="checkbox" id="hamburger">
+                 <label for="hamburger" aria-label="Toggle menu">
+                    <svg width="47" height="23" id="burger" viewBox="0 0 47 23" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="47" height="5" rx="2.5" />
+                    <rect y="9" width="47" height="5" rx="2.5" />
+                    <rect y="18" width="47" height="5" rx="2.5" />
+                    </svg>
+                </label>
+                <div id="whole-main-menu">
+                    <ul id="burger-con">
+                        <li><a href="#">About B&L</a></li>
+                        <li><a href="#">Coffee</a></li>
+                        <li><a href="#">Tea</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <button popovertarget="map-box" class="button" id="store-button">Store Locator</button>
+                </div>
+            </nav>
+            <button popovertarget="map-box" class="button col-span-2" id="store-but-desk">Store Locator</button>
+        </header>
+        </div>
+        <main id="main-content">
+
+            <section id="hero-image" class="full-width-grid-con">
+            <img
+            class="hero-main"
+            fetchpriority="high"
+                sizes="100vw"
+                srcset="
+                images/hero_j5sa6b_c_scale,w_412.jpg 412w,
+                images/hero_j5sa6b_c_scale,w_1267.jpg 1267w,
+                images/hero_j5sa6b_c_scale,w_1827.jpg 1827w,
+                images/hero_j5sa6b_c_scale,w_2142.jpg 2142w,
+                images/hero_j5sa6b_c_scale,w_2434.jpg 2434w,
+                images/hero_j5sa6b_c_scale,w_2802.jpg 2802w,
+                images/hero_j5sa6b_c_scale,w_3042.jpg 3042w,
+                images/hero_j5sa6b_c_scale,w_3410.jpg 3410w,
+                images/hero_j5sa6b_c_scale,w_3497.jpg 3497w,
+                images/hero_j5sa6b_c_scale,w_3600.jpg 3600w"
+                src="images/hero_j5sa6b_c_scale,w_3600.jpg"
+                alt="Coffee, fruit and croissant">
+                <div class="grid-con">
+                    <h2 class="col-span-full">Bean & Leaf<br>
+                    <span>The Art of The Brew</span></h2>
+                    <h3 class="col-span-full">Exceptional Roasts <br><span>&</span> Rare Leaves</h3>
+                    <p class="col-span-full m-col-span-7">Curating the world's finest coffee beans and loose-leaf teas for the discerning palate.</p>
+                    <div id="hero-but-con" class="col-span-full m-col-start1 m-col-end-10">
+                        <a href="#" id="hero-dark-but" class="button">Our Process</a>
+                        <a href="#" id="hero-light-but" class="button">Our Promotions</a>
+                    </div>
+                </div>
+            </section>
+
+            <div id="collection-fullwidth-con">
+                <section id="our-collection" class="grid-con center-grid-con">
+                    <h2 class="col-span-full">Our Collection</h2>
+                    <p class="col-span-full m-col-span-7">Small-Batch excellence from farm to cup</p>
+                    <div class="col-span-full m-col-span-5" ><a href="#">View All Collections</a><span class="link-right-arrow" aria-hidden="true"></span></div>
+                        <article class="card col-span-full m-col-span-6">
+                            <img
+                                loading="lazy"
+                                sizes="100vw"
+                                srcset="
+                                images/nourish-brown_c_scale,w_372.jpg 372w,
+                                images/nourish-brown_c_scale,w_544.jpg 544w,
+                                images/nourish-brown_c_scale,w_751.jpg 751w,
+                                images/nourish-brown_c_scale,w_901.jpg 901w,
+                                images/nourish-brown_c_scale,w_1068.jpg 1068w,
+                                images/nourish-brown_c_scale,w_1072.jpg 1072w"
+                                src="images/nourish-brown_c_scale,w_1072.jpg"
+                                alt="Hand Picked Beans">
+                            <h3>Nourishing Brown</h3>
+                            <p>Hand Picked beans from farms of the worlds coffee belt.</p>
+                            <a href="#">Shop Coffee</a>
+                        </article>
+                        <article class="card col-span-full m-col-span-6">
+                            <img
+                                loading="lazy"
+                                sizes="100vw"
+                                srcset="
+                                images/tea-leaves_qh34ac_c_scale,w_372.jpg 372w,
+                                images/tea-leaves_qh34ac_c_scale,w_582.jpg 582w,
+                                images/tea-leaves_qh34ac_c_scale,w_752.jpg 752w,
+                                images/tea-leaves_qh34ac_c_scale,w_898.jpg 898w,
+                                images/tea-leaves_qh34ac_c_scale,w_1042.jpg 1042w,
+                                images/tea-leaves_qh34ac_c_scale,w_1072.jpg 1072w"
+                                src="images/tea-leaves_qh34ac_c_scale,w_1072.jpg"
+                                alt="Organic Tea Leaves">
+                            <h3>Ceremonial Green</h3>
+                            <p>Rare organic leaves sourced from high-altitude Japanese farms.</p>
+                            <a href="#">Shop Tea</a>
+                        </article>
+                </section>
+            </div>
+
+            <div id="brewing-tools-fullwidth-con">
+                <div id="brew-bg-con">
+                <section id="brewing-tools" class="grid-con center-grid-con">
+                        <div id="brew-text-con" class="col-span-full m-col-span-5 l-col-start-2 l-col-end-6">
+                            <h2>Brewing Mastery</h2>
+                            <p>Enhance your experience with our curated selection of brewing tools.</p>
+                            <a  href="#" class="button">Explore</a>
+                        </div>
+                         <div id="brew-pic-con" class="col-span-full m-col-span-7">
+                            <picture> 
+                                  <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        images/mastery-coffee.jpg 1x,
+                                        images/mastery-coffee@2x.jpg 2x"> 
+                                <img loading="lazy" src="images/beans.webp" alt="cofee beans and coffee cup"> 
+                            </picture>
+                        </div>
+                     
+                </section>
+                </div>   
+            </div>
+
+            <div id="faq-fullwidth-con">
+                <section id="faq" class="grid-con center-grid-con">
+                    <div id="faq-text-con" class="col-span-full m-col-start-1 m-col-end-6 l-col-end-5">
+                        <h2>Frequently Asked Questions</h2>
+                        <p>You have questions? We Have Answers!</p>
+                    </div>
+                    <div id="faq-detials-con" class="col-span-full m-col-start-7 m-col-end-13 l-col-start-6 l-col-end-13">
+                        <details>
+                            <summary>Where do you source your beans?</summary>
+                            <p>We work directly with trusted coffee growers and specialty importers from some of the world's most respected coffee-producing regions, including Central and South America, Africa, and Southeast Asia.</p>
+                        </details> 
+                        <details>
+                            <summary>Where is the shelf life of your loose tea?</summary>
+                            <p>For optimal flavour, we recommend consuming our teas within 6 months of purchase. Although they remain safe and aromatic for up to a year when stored in a tight container</p>
+                        </details>
+                        <details>
+                            <summary>Do you have wholesale opportunities?</summary>
+                            <p>Yes. We partner with cafés, restaurants, offices, retailers, and other businesses looking to serve or sell premium coffee. Wholesale partners can access competitive pricing, flexible ordering options, and ongoing support.</p>
+                        </details>
+                        <details>
+                            <summary>How is shipping handled for freshness?</summary>
+                            <p>Freshness is one of our top priorities. Coffee is roasted in small batches and shipped shortly after roasting whenever possible. Orders are carefully packaged to preserve flavour and aroma during transit.</p>
+                        </details>
+                        <div id="faq-link-con"><a href="#">More Faq</a><span class="link-right-arrow" aria-hidden="true"></span></div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="contact-fullwidth-con">
+                <div id="contact-bg-con">
+                    <section id="contact" class="grid-con center-grid-con">
+                        <div id="contact-text-con" class="col-span-full m-col-span-6 l-col-start-1 l-col-end-6">
+                            <h2>Let&rsquo;s Connect</h2>
+                            <p>Inquire about our subscriptions, <br> tastings, or individual programs.</p>
+                            <dl>
+                                <dt>Mail:</dt>
+                                <dd><a href="mailto:hello@beanandleaf.ca">hello@beanandleaf.ca</a></dd>
+                                <dt>Call:</dt>
+                                <dd><a href="tel:+15192365323">1(519)BEN-LEAF</a></dd>
+                            </dl>
+                            <address>
+                                475 Dark Roast Cres.<br>
+                                Toronto, Ontario, Canada<br>
+                                M4K 3B3<br>
+                            </address>
+                        </div>
+
+                        <form action="mail.php" method="post" class="col-span-full m-col-span-6">
+                            <div>
+                                <label for="fullName">Your Name:</label>
+                                <!-- The name attribute gives a form field a key (or label) when the form data is submitted. Not always needed, especially if the entire form is handled by JS -->
+                                <input type="text" placeholder="Jane Smith" id="fullName" name="fullName" required>
+                            </div>
+                            <div>
+                                <label for="email">Email Address</label>
+                                <input type="email" placeholder="js@beanandleaf.ca" id="email" name="email" required>
+                            </div>
+                            <div class="col-span-full">
+                                <label for="interest">Interest</label>
+                                <div class="select-wrapper">
+                                <!-- older Assituve tech may miss native required on selects -->
+                                <select required id="interest" name="interest" aria-required="true" >
+                                    <option value="" disabled selected>Please choose an option</option>
+                                    <option value="general">General</option>
+                                    <option value="subscription">Monthly Subscription</option>
+                                    <option value="complaint">Complaint</option>
+                                    <option value="ingredients">Ingredients</option>
+                                    <option value="franchise">Franchise</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="col-span-full">
+                                <label for="message">Message</label>
+                                <p id="messageHelp">
+                                    Maximum 200 characters.
+                                </p>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder="Tell us more about your inquiry..."
+                                    maxlength="200"
+                                    aria-describedby="messageHelp"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button class="button col-span-full" type="submit">Send Message</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+
+        </main>      
+        <footer id="main-footer" class="grid-con center-grid-con">  
+             <div id="logo-copy-con" class="col-span-full m-col-span-6 l-col-span-5">
+                <img loading="lazy" src="images/logo.svg" alt="Bean & Leaf Logo">
+                <p>Curating the luxurious experience of premium tea and coffee for the modern connoisseur.</p> 
+             </div>
+             <nav class="col-span-full m-col-span-6 l-col-start-7 l-col-end-13" id="footer-nav">
+                <h2 class="visually-hidden">Footer Nav</h2>
+                <ul>
+                    <li><span class="footer-nav-heading">Business</span></li>
+                    <li><a href="#">Tea Collection</a></li>
+                    <li><a href="#">Coffee Families</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>         
+                <ul>
+                    <li><span class="footer-nav-heading">About B&L</span></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Shipping Prices</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+            </nav>
+               <address class="col-span-full">
+                    475 Dark Roast Cres.<br>
+                    Toronto, Ontario, Canada<br>
+                    M4K 3B3<br>
+                </address>
+             <div id="footer-icons" class="col-span-full">
+                <a href="#">
+                <img loading="lazy" src="images/facebook.svg" alt="Face Book Logo"></a>
+                <a href="#">
+                <img loading="lazy" src="images/instagram.svg" alt="Instagram Logo"></a>
+                <a href="#">
+                <img loading="lazy" src="images/tik-tok.svg" alt="Tik Tok Logo"></a>
+             </div> 
+            <!-- small is like the fine print -->
+            <p class="col-span-full" id="footer-copyright"><small>&copy; 2026 COFFEE & TEA CO. ALL RIGHTS RESERVED</small></p>
+            <div id="footer-language-con" class="col-span-full">
+                <a href="#">English</a> | <a href="#">Language</a>
+            </div>
+        </footer>
+        <button class="scroll-top-button" aria-label="Scroll to top">
+            ↑
+        </button>
+        <section id="map-box" popover>
+            <button class="lightbox-close" popovertarget="map-box" popovertargetaction="hide">x</button>
+            <h2>Where to find us!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.0309273159846!2d-83.13408969999999!3d42.681887200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824e9b9ed5be0b3%3A0xa20017131f19f028!2sBean%20and%20Leaf%20Cafe!5e0!3m2!1sen!2sca!4v1780435303255!5m2!1sen!2sca" style="border:0; width: 100%; height: 100vh;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </body>
+</html>
